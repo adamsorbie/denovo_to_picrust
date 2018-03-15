@@ -8,5 +8,7 @@ R
 PICRUSt 
 
 
-```pick_closed_reference_otus.py -i merged_otus.tab -o qiime_output 
+```
+pick_closed_reference_otus.py -i merged_otus.tab -o qiime_output
+
 ``` 
