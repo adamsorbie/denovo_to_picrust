@@ -20,12 +20,12 @@ pick_closed_reference_otus.py -i merged_otus.tab -o qiime_output
 
 ``` 
 2. Now we have an "otu table" we need to check how many of our de-novo picked OTUs have been discarded by the closed ref OTU picking. Generally, less than 10% is ok but you should also check the abundances of those which have been dropped. To check how many OTUs were kept we can simply use the word count utility from bash. Run this on the original file and the qiime output: 
-``` 
+``` BASH
 wc -l <filename> 
 
 ``` 
 3. Next, we need to map the greengenes ids to our OTUs. Luckily for us, qiime outputs a txt file in the uclust_ref_picked_otus folder. We can use this for the mapping. This simple R script, extracts the ids, sorts them and replaces the OTUid with the greengenes id: 
-``` 
+``` R
 gg_id_matched_seqs <- read.table("qiime_output/uclust_ref_picked_otus/seq_otus.txt", 
                                  col.names = c("gg_id", "seq_1", "seq_2"), sep="\t", 
                                  fill = TRUE, check.names = FALSE)
