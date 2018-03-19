@@ -16,7 +16,7 @@ FASTA file with sequence for each OTU
 
 1. For this we will use the qiime1 script pick_closed_reference_otus.py, for those using qiime2 you can use the vsearch plugin with cluster-features-closed-reference.
 ```
-pick_closed_reference_otus.py -i merged_otus.tab -o qiime_output
+pick_closed_reference_otus.py -i seqs.fasta -o qiime_output
 
 ``` 
 2. Now we have an "otu table" we need to check how many of our de-novo picked OTUs have been discarded by the closed ref OTU picking. Generally, less than 10% is ok but you should also check the abundances of those which have been dropped. To check how many OTUs were kept we can simply use the word count utility from bash. Run this on the original file and the qiime output: 
