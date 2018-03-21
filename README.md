@@ -52,3 +52,15 @@ biom convert -i gg_otu_table.tab -o otu_picrust.biom ---table-type="OTU table" -
 ``` 
 
 ## Part two - Run PICRUSt
+1. First step we normalize by copy number
+```
+normalize_by_copy_number.py -i otu_picrust.biom -o normalized.biom 
+```
+2. Now we predict metagenomes
+```
+predict_metagenomes.py -i normalized.biom -o metagenome_predictions.biom
+```
+ ## Analysis 
+ 
+ 
+
