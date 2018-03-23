@@ -49,7 +49,7 @@ write.table(filtered_sorted_otu, file = "gg_otu_table.tab", sep="\t", row.names 
 ``` 
 4. Convert output file of R script to biom using the biom convert script: 
 ```
-biom convert -i gg_otu_table.tab -o otu_picrust.biom ---table-type="OTU table" --to-json
+biom convert -i gg_otu_table.tab -o otu_picrust.biom --table-type="OTU table" --to-json
 
 ``` 
 
