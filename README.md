@@ -63,6 +63,7 @@ normalize_by_copy_number.py -i otu_picrust.biom -o normalized.biom
 predict_metagenomes.py -i normalized.biom -o metagenome_predictions.biom
 ```
  ## Analysis 
+ To produce output similar to that below follow the following tutorial (all of the tools required should already be installed on the microbiome helper virtual box if you are using this): 
  
- 
+ https://picrust.github.io/picrust/tutorials/humann_tutorial.html
 
