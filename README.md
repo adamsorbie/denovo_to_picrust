@@ -3,9 +3,9 @@ Pipeline for using de-novo picked otus with PICRUSt
 
 Requirements: 
 
-QIIME 1/QIIME 2 
-R 
-PICRUSt 
+QIIME 1/QIIME 2, 
+R, 
+PICRUSt, 
 
 For beginners it's probably much easier to just install the microbiome helper virtual box: [Microbiome Helper](https://github.com/LangilleLab/microbiome_helper/wiki/Microbiome-Helper-Virtual-Box)
 
