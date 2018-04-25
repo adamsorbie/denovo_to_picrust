@@ -26,7 +26,7 @@ pick_closed_reference_otus.py -i seqs.fasta -o qiime_output
 wc -l <filename> 
 
 ``` 
-3. Next, we need to map the greengenes ids to our OTUs. Luckily for us, qiime outputs a txt file in the uclust_ref_picked_otus folder. We can use this for the mapping. This simple R script, extracts the ids, sorts them and replaces the OTUid with the greengenes id: 
+3. Next, we need to map the greengenes ids to our OTUs. Luckily for us, qiime outputs a txt file in the uclust_ref_picked_otus folder containing the mapping. We can use this for the mapping. This simple R script, extracts the ids, sorts them and replaces the OTUid with the greengenes id: 
 ``` R
 gg_id_matched_seqs <- read.table("qiime_output/uclust_ref_picked_otus/seq_otus.txt", 
                                  col.names = c("gg_id", "seq_1", "seq_2"), sep="\t", 
