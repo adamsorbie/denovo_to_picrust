@@ -67,4 +67,4 @@ predict_metagenomes.py -i normalized.biom -o metagenome_predictions.biom
  
  https://picrust.github.io/picrust/tutorials/humann_tutorial.html
 
-![alt text](https://github.com/adamsorbie/denovo_to_picrust/blob/master/Galaxy23-%5BC)_Plot_LEfSe_Results_on_data_22%5D.png)
+![alt text](https://github.com/adamsorbie/denovo_to_picrust/blob/master/example.png)
