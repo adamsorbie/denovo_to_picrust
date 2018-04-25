@@ -1,4 +1,4 @@
-# denovo_to_picrust-
+# denovo_to_picrust
 Pipeline for using de-novo picked otus with PICRUSt 
 
 Requirements: 
@@ -63,7 +63,7 @@ normalize_by_copy_number.py -i otu_picrust.biom -o normalized.biom
 predict_metagenomes.py -i normalized.biom -o metagenome_predictions.biom
 ```
  ## Analysis 
- To produce output similar to that below follow the following tutorial (all of the tools required should already be installed on the microbiome helper virtual box if you are using this): 
+ To produce output similar to that below follow the following tutorial (all of the tools required, with the exception of [LEfSe](https://huttenhower.sph.harvard.edu/galaxy/), should already be installed on the microbiome helper virtual box): 
  
  https://picrust.github.io/picrust/tutorials/humann_tutorial.html
 
